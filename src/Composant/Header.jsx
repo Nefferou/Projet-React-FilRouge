@@ -1,4 +1,5 @@
 import React from "react";
+import LangageSelector from "./LangageSelector";
 import "../Style/style.css"
 
 function Header({lang, changeLang}) {
@@ -6,7 +7,7 @@ function Header({lang, changeLang}) {
         <div id="header">
             <img src="https://moodle.ynov.com/pluginfile.php/717462/mod_resource/content/0/logo%20Pokedex.svg" alt="Logo"/>
             <div></div>
-            <button id="lang" onClick={() => lang === "fr" ? changeLang("en") : changeLang("fr")}>Switch Lang</button>
+            <LangageSelector changeLang={changeLang} />
         </div>
     );
 }
