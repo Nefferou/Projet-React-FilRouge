@@ -25,12 +25,28 @@
 
 .pokemon {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     background-color: lightgrey;
     width: 15%;
     height: 10%;
-    border-radius: 10%;
+    border-radius: 2%;
+}
+
+.pokemon > p {
+    align-self: flex-start;
+    padding-left: 2vh;
+    font-size: small;
+}
+
+.pokemon h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.pokemon img {
+    width: 65%;
+    height: 65%;
+    align-self: center;
 }
 
 .type {
@@ -39,165 +55,7 @@
     flex-direction: row;
 }
 
-.fire {
-    background-color: red;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.water {
-    background-color: blue;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.grass {
-    background-color: green;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.flying {
-    background-color: lightblue;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.normal {
-    background-color: lightgray;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.bug {
-    background-color: greenyellow;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.poison {
-    background-color: purple;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.ground {
-    background-color: burlywood;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.rock {
-    background-color: lightsalmon;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.electric {
-    background-color: yellow;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.fairy {
-    background-color: pink;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.fighting {
-    background-color: brown;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.steel {
-    background-color: grey;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.psychic {
-    background-color: palevioletred;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.ice {
-    background-color: lightcyan;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.dragon {
-    background-color: darkblue;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.ghost {
-    background-color: darkslateblue;
-    border: solid 1px black;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
-}
-
-.dark {
-    background-color: black;
-    border: solid 1px black;
-    color: white;
-    border-radius: 25%;
-    padding: 1vh;
-    width: 7vh;
-    text-align: center;
+.type p {
+    margin-top: 0;
+    margin-bottom: 0.5vh;
 }

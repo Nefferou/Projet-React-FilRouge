@@ -1,5 +1,6 @@
 import React from "react"
 import "../Style/style.css"
+import "../Style/type.css"
 
 function Pokemon({id, name, sprite, type1, type2}) {
 
@@ -49,7 +50,7 @@ function color(type) {
         case "ghost": return <p className="ghost">{type}</p>
         case "ice": return <p className="ice">{type}</p>
         case "dark": return <p className="dark">{type}</p>
-        
+
         case "fairy": return <p className="fairy">{type}</p>
         case "dragon": return <p className="dragon">{type}</p>
         
