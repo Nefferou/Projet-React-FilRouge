@@ -11,6 +11,19 @@
     width: 30%;
 }
 
+.langSelector button{
+    width: 30%;
+    height: 30%;
+    margin: 1%;
+    border: solid black 2px;
+    border-radius: 20%;
+    background-color: lightsteelblue;
+}
+
+.langSelector button:hover {
+    background-color: grey;
+}
+
 .pokedex{
     display: flex;
     flex-direction: column;
