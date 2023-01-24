@@ -71,4 +71,6 @@
 .type p {
     margin-top: 0;
     margin-bottom: 0.5vh;
+    font-weight: bold;
+    text-align: center;
 }

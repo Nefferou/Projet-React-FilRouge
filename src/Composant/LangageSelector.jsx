@@ -13,7 +13,7 @@ function LangageSelector({changeLang}) {
                 <button onClick={() => changeLang("de")}>de</button>
                 <button onClick={() => changeLang("ja")}>ja</button>
 
-                <button onClick={() => changeLang("zh-hans")}>zh-hans</button>
+                <button onClick={() => changeLang("zh-Hans")}>zh-hans</button>
                 <button onClick={() => changeLang("roomaji")}>roomaji</button>
                 <button onClick={() => changeLang("ko")}>ko</button>
             </tr>

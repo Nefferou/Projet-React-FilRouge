@@ -32,29 +32,29 @@ function Type({typeOne, typeTwo}) {
 
 function color(type) {
     switch (type) {
-        case "normal": return <p className="normal">{type}</p>
-        case "fire": return <p className="fire">{type}</p>
-        case "grass": return <p className="grass">{type}</p>
-        case "water": return <p className="water">{type}</p>
-        case "electric": return <p className="electric">{type}</p>
+        case "normal": return <p className="normal">NORMAL</p>
+        case "fire": return <p className="fire">FIRE</p>
+        case "grass": return <p className="grass">GRASS</p>
+        case "water": return <p className="water">WATER</p>
+        case "electric": return <p className="electric">ELECTRIC</p>
 
-        case "flying": return <p className="flying">{type}</p>
-        case "ground": return <p className="ground">{type}</p>
-        case "rock": return <p className="rock">{type}</p>
-        case "psychic": return <p className="psychic">{type}</p>
-        case "fighting": return <p className="fighting">{type}</p>
+        case "flying": return <p className="flying">FLYING</p>
+        case "ground": return <p className="ground">GROUND</p>
+        case "rock": return <p className="rock">ROCK</p>
+        case "psychic": return <p className="psychic">PSYCHIC</p>
+        case "fighting": return <p className="fighting">FIGHTING</p>
 
-        case "bug": return <p className="bug">{type}</p>
-        case "poison": return <p className="poison">{type}</p>
-        case "steel": return <p className="steel">{type}</p>
-        case "ghost": return <p className="ghost">{type}</p>
-        case "ice": return <p className="ice">{type}</p>
-        case "dark": return <p className="dark">{type}</p>
+        case "bug": return <p className="bug">BUG</p>
+        case "poison": return <p className="poison">POISON</p>
+        case "steel": return <p className="steel">STEEL</p>
+        case "ghost": return <p className="ghost">GHOST</p>
+        case "ice": return <p className="ice">ICE</p>
+        case "dark": return <p className="dark">DARK</p>
 
-        case "fairy": return <p className="fairy">{type}</p>
-        case "dragon": return <p className="dragon">{type}</p>
+        case "fairy": return <p className="fairy">FAIRY</p>
+        case "dragon": return <p className="dragon">DRAGON</p>
         
-        default: return <p className="normal">{type}</p>
+        default: return <p className="normal"></p>
     } 
 
 }
