@@ -1,6 +1,6 @@
 import React from "react";
 import LangageSelector from "./LangageSelector";
-import pokedex from "../Ressources/pokedex.png"
+import pokedex from "../Ressource/pokedex.png"
 import "../Style/style.css"
 
 function Header({lang, changeLang}) {
