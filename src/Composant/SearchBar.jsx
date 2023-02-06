@@ -1,3 +1,5 @@
+import "../Style/style.css"
+
 function SearchBar({changeSearch}) {
     return (
         <div className="searchBar">
