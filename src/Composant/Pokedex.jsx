@@ -3,19 +3,21 @@ import "../Style/style.css"
 import Pokemon from "./Pokemon";
 import pokemons from "../Ressource/pokemon.json"
 
-function Pokedex({lang}) {
+function Pokedex({lang, search}) {
 
     let i = 0;
     const pokedex = [];
     const tab = [];
 
     pokemons.forEach((pokemon) =>{
-        pokedex.push(<Pokemon key={pokemon.id} id={pokemon.id} name={pokemon.names[lang]} sprite={pokemon.image} type1={pokemon.types[0]} type2={pokemon.types[1]} />)
+        if(pokemon.names[lang].includes(search)){
+            pokedex.push(<Pokemon key={pokemon.id} id={pokemon.id} name={pokemon.names[lang]} sprite={pokemon.image} type1={pokemon.types[0]} type2={pokemon.types[1]} />)
+        }
     })
 
-    pokedex.forEach((pokemon) => {
+    pokedex.forEach(() => {
         if(i % 6 === 0){
-            tab.push(<Line pokemons={pokedex.slice(i, i+6)}/>)
+            tab.push(<Line key={i} pokemons={pokedex.slice(i, i+6)}/>)
         }
         i++
     })

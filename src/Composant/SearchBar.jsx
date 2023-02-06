@@ -1,6 +1,8 @@
-function SearchBar() {
+function SearchBar({changeSearch}) {
     return (
-        <input type="search" />
+        <div>
+            <input type="text" onChange={event => changeSearch(event.target.value)}/>
+        </div>
     );
 }
 
