@@ -5,11 +5,12 @@ import Pokedex from './Composant/Pokedex'
 
 function App() {
   const [lang, setLang] = useState("fr");
+  const [search, setSearch] = useState("");
 
   return (
     <div className="App">
-      <Header lang={lang} changeLang={setLang}/>
-      <Pokedex lang={lang} />
+      <Header changeLang={setLang} changeSearch={setSearch}/>
+      <Pokedex lang={lang} search={search}/>
     </div>
   );
 }
