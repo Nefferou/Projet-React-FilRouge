@@ -10,7 +10,7 @@ function Pokedex({lang, search}) {
     const tab = [];
 
     pokemons.forEach((pokemon) =>{
-        if(pokemon.names[lang].includes(search)){
+        if(pokemon.names[lang].toLowerCase().includes(search.toLowerCase()) || pokemon.types[0].toUpperCase().includes(search.toUpperCase()) || (pokemon.types[1] ? pokemon.types[1].toUpperCase().includes(search.toUpperCase()) : false)){
             pokedex.push(<Pokemon key={pokemon.id} id={pokemon.id} name={pokemon.names[lang]} sprite={pokemon.image} type1={pokemon.types[0]} type2={pokemon.types[1]} />)
         }
     })
