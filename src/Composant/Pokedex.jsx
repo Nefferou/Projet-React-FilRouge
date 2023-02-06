@@ -1,9 +1,9 @@
 import React from "react"
 import "../Style/style.css"
 import Pokemon from "./Pokemon";
-import pokemons from "../Ressource/pokemon.json"
+//import pokemons from "../Ressource/pokemon.json"
 
-function Pokedex({lang, search}) {
+function Pokedex({pokemons, lang, search}) {
 
     let i = 0;
     const pokedex = [];
