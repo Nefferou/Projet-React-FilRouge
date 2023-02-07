@@ -1,6 +1,8 @@
+/*Header*/
 #header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #header img {
@@ -9,13 +11,16 @@
 
 #header div {
     width: 30%;
+    margin: auto;
 }
 
+/*Load*/
 .loading {
     font-size: xx-large;
     color: lightgray;
 }
 
+/*LangSelector*/
 .langSelector button{
     width: 30%;
     height: 30%;
@@ -29,6 +34,7 @@
     background-color: grey;
 }
 
+/*Pokedex*/
 .pokedex{
     display: flex;
     flex-direction: column;
@@ -37,36 +43,89 @@
 .line{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 2vh;
 }
 
-.pokemon {
+/*Profil*/
+.profil .header {
+    margin-bottom: 5%;
+}
+
+.profil img {
+    max-width: 33%;
+}
+
+.pokemonProfil {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.pokemonProfil img{
+    background-color: lightgrey;
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    margin: 1%;
+}
+
+.attribut {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokemonProfil > div {
+    margin: 1%;
+    width: 35%;
+    align-self: center;
+}
+
+.pokemonProfil h1 {
+    font-size: xx-large;
+}
+
+.pokemonProfil .type {
+    font-size: xx-large;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pokemonProfil .type p{
+    margin-right: 1%;
+}
+
+
+/*Box*/
+.pokemonBox {
     display: flex;
     flex-direction: column;
     background-color: lightgrey;
     width: 15%;
     height: 10%;
+    margin: 0.8%;
     border-radius: 2%;
 }
 
-.pokemon > p {
+.pokemonBox > p {
     align-self: flex-start;
     padding-left: 2vh;
     font-size: small;
 }
 
-.pokemon h1 {
+.pokemonBox h1 {
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.pokemon img {
+.pokemonBox img {
     width: 65%;
     height: 65%;
     align-self: center;
 }
 
+/*Type*/
 .type {
     display: flex;
     justify-content: space-around;
@@ -80,6 +139,7 @@
     text-align: center;
 }
 
+/*SearchBar*/
 .searchBar{
     display: flex;
     justify-content: center;

@@ -1,18 +1,4 @@
 import React from "react"
-import "../Style/style.css"
-import "../Style/type.css"
-
-function Pokemon({id, name, sprite, type1, type2}) {
-
-    return (
-        <div className="pokemon">
-            <p>No.{id}</p>
-            <h1>{name}</h1>
-            <img src={sprite} alt="" />
-            <Type typeOne={type1} typeTwo={type2} />
-        </div>
-    );
-}
 
 function Type({typeOne, typeTwo}) {
 
@@ -59,4 +45,4 @@ function color(type) {
 
 }
 
-export default Pokemon;
+export default Type;

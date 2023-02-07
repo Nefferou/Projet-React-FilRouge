@@ -10,11 +10,17 @@ function App() {
   const [items, setItems] = useState([]);
   const [load, isLoad] = useState(true);
 
-  useEffect(function(){
-    callAPI(setItems, isLoad);
+  useEffect(function () {
+    isLoad(true)
+    fetch("https://pokedex-jgabriele.vercel.app/pokemons.json")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          isLoad(false)
+          setItems(result)
+        }
+      )
   }, [])
-
-  console.log(items);
   
   return (
     <div className="App">
@@ -27,16 +33,6 @@ function App() {
   );
 }
 
-function callAPI(setItems, isLoad) {
-  isLoad(true)
-  fetch("https://pokedex-jgabriele.vercel.app/pokemons.json")
-    .then(res => res.json())
-    .then(
-      (result) => {
-        isLoad(false)
-        setItems(result)
-      }
-    )
-}
+
 
 export default App;
