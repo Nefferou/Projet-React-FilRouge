@@ -1,3 +1,9 @@
+/*All*/
+* {
+    text-decoration: none;
+    color: black;
+}
+
 /*Header*/
 #header {
     display: flex;
@@ -48,54 +54,80 @@
     margin-top: 2vh;
 }
 
-/*Profil*/
-.profil .header {
-    margin-bottom: 5%;
-}
-
-.profil img {
-    max-width: 33%;
-}
-
-.pokemonProfil {
+/*ChangeBar*/
+.changeBar {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 2%;
 }
 
-.pokemonProfil img{
-    background-color: lightgrey;
+.changeBar div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+.changeBar img{
     width: 20%;
     height: 20%;
-    border-radius: 10px;
-    margin: 1%;
+    margin: auto;
 }
 
-.attribut {
+.changeBar input{
+    margin: 1%;
+    height: 100%;
+}
+
+/*Profil*/
+.pokemonProfil {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin: 2%;
+    padding: 1%;
+}
+
+.pokemonProfil > div{
     display: flex;
     justify-content: space-between;
 }
 
-.pokemonProfil > div {
-    margin: 1%;
-    width: 35%;
-    align-self: center;
-}
-
 .pokemonProfil h1 {
-    font-size: xx-large;
-}
-
-.pokemonProfil .type {
-    font-size: xx-large;
-    display: flex;
-    justify-content: flex-start;
+    text-align: center;
 }
 
 .pokemonProfil .type p{
-    margin-right: 1%;
+    font-size: xx-large;
 }
 
+.attribut {
+    width: 50%;
+}
+
+.pokemonProfil table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.pokemonProfil th {
+    font-size: x-large;
+    border-bottom: solid 2px black;
+}
+
+.pokemonProfil tr {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0.5%;
+}
 
 /*Box*/
 .pokemonBox {

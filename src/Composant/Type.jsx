@@ -4,8 +4,8 @@ function Type({typeOne, typeTwo}) {
 
     if(typeTwo != null){
         return <div className="type">
-            <p>{color(typeOne)}</p>
-            <p>{color(typeTwo)}</p>
+            {color(typeOne)}
+            {color(typeTwo)}
         </div>
     }
 

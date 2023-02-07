@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import '../Style/App.css';
 import PokemonProfil from '../Composant/PokemonProfil'
-import pokedex from '../Ressource/pokedex.png'
 
 function Profil() {
 
@@ -26,9 +25,6 @@ function Profil() {
 
     return (
         <div className='profil'>
-            <div className='header'>
-                <img src={pokedex} alt="" />
-            </div>
             {load ? 
             <div className='loading'>Loading ...</div> 
             :
