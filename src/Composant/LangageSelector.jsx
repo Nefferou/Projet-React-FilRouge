@@ -1,23 +1,26 @@
 import React from "react";
+import { Grid, Button } from "@mui/material";
 import "../Style/style.css"
 
 function LangageSelector({changeLang}) {
     return (
-        <>
-            <tr className="langSelector">
-                <button onClick={() => changeLang("fr")}>fr</button>
-                <button onClick={() => changeLang("en")}>en</button>
-                <button onClick={() => changeLang("it")}>it</button>
-
-                <button onClick={() => changeLang("es")}>es</button>
-                <button onClick={() => changeLang("de")}>de</button>
-                <button onClick={() => changeLang("ja")}>ja</button>
-
-                <button onClick={() => changeLang("zh-Hans")}>zh-hans</button>
-                <button onClick={() => changeLang("roomaji")}>roomaji</button>
-                <button onClick={() => changeLang("ko")}>ko</button>
-            </tr>
-        </>
+        <Grid id="grid" container direction="column" justifyContent="space-between" alignItems="center">
+            <Grid container direction="row" justifyContent="space-evenly" alignItems="center">
+                <Button onClick={() => changeLang("fr")}>FR</Button>
+                <Button onClick={() => changeLang("en")}>EN</Button>
+                <Button onClick={() => changeLang("it")}>IT</Button>
+            </Grid>
+            <Grid container direction="row" justifyContent="space-evenly" alignItems="center">
+                <Button onClick={() => changeLang("es")}>ES</Button>
+                <Button onClick={() => changeLang("de")}>DE</Button>
+                <Button onClick={() => changeLang("ja")}>JA</Button>
+            </Grid>
+            <Grid container direction="row" justifyContent="space-evenly" alignItems="center">
+                <Button onClick={() => changeLang("zh-Hant")}>ZH</Button>
+                <Button onClick={() => changeLang("roomaji")}>RO</Button>
+                <Button onClick={() => changeLang("ko")}>KO</Button>
+            </Grid>
+        </Grid>
     );
 }
 
