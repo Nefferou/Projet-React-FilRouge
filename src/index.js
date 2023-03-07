@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import './Style/index.css';
 
 import App from './App';
-import Profil from './Page/Profile'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,8 +14,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/home" element={<App />} />
-        <Route path="/profil/:id" element={<Profil />} />
-        <Route path={"/"} element={<Navigate to="/home" />} />
+        <Route path={"/*"} element={<Navigate to="/home" />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

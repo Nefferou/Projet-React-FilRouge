@@ -1,9 +1,3 @@
-/*All*/
-* {
-    text-decoration: none;
-    color: black;
-}
-
 /*Header*/
 #header img {
     width: 30%;
@@ -34,90 +28,23 @@
     margin-top: 2vh;
 }
 
-/*ChangeBar*/
-.changeBar {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 2%;
-}
-
-.changeBar div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 1%;
-    height: 100%;
-    width: 100%;
-}
-
-.changeBar img{
-    width: 20%;
-    height: 20%;
-    margin: auto;
-}
-
-.changeBar input{
-    margin: 1%;
-    height: 100%;
-}
-
-/*Profil*/
-.pokemonProfil {
-    background-color: antiquewhite;
-    border-radius: 15px;
-    margin: 2%;
-    padding: 1%;
-}
-
-.pokemonProfil > div{
-    display: flex;
-    justify-content: space-between;
-}
-
-.pokemonProfil h1 {
-    text-align: center;
-}
-
-.pokemonProfil .type p{
-    font-size: xx-large;
-}
-
-.attribut {
-    width: 50%;
-}
-
-.pokemonProfil table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: solid 2px black;
-    border-radius: 10px;
-    width: 50%;
-}
-
-.pokemonProfil th {
-    font-size: x-large;
-    border-bottom: solid 2px black;
-}
-
-.pokemonProfil tr {
-    font-size: larger;
-    font-weight: bolder;
-    text-align: center;
-    padding: 0.5%;
-}
-
 /*Box*/
 .pokemonBox {
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
     width: 15%;
     height: 10%;
     margin: 0.8%;
-    border-radius: 2%;
+}
+
+.pokemonBox button{
+    border: solid black 2px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.pokemonBox button:hover{
+    background-color: rgb(163, 163, 163);
 }
 
 .pokemonBox > p {
@@ -137,6 +64,29 @@
     align-self: center;
 }
 
+/*Dialog*/
+.pokemonBoxDialog button p {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.pokemonBoxDialog{
+    text-align: center;
+}
+
+.pokemonBoxDialog img{
+    width: 25%;
+}
+
+.pokemonBoxDialog ul{
+    padding: 0;
+    margin:auto
+}
+
+.css-wjh20t-MuiPagination-ul{
+    justify-content: space-around;
+}
+
 /*Type*/
 .type {
     display: flex;
@@ -149,19 +99,4 @@
     margin-bottom: 0.5vh;
     font-weight: bold;
     text-align: center;
-}
-
-/*SearchBar*/
-.searchBar{
-    display: flex;
-    justify-content: center;
-}
-
-.searchBar input{
-    width: 90%;
-    height: 50%;
-    padding: 1%;
-    align-self: center;
-    border-radius: 10px;
-    font-size: x-large;
 }
