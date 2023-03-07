@@ -12,7 +12,7 @@ function PokemonBox({id, name, sprite, type1, type2}) {
 
     const handleClickOpen = () => {
         setOpen(true);
-        
+        setIds(id);
     };
 
     const handleClose = () => {

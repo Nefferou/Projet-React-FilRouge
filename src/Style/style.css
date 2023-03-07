@@ -83,7 +83,7 @@
     margin:auto
 }
 
-.css-wjh20t-MuiPagination-ul{
+div>nav>ul{
     justify-content: space-around;
 }
 
