@@ -9,12 +9,12 @@ function ChangeBar({items}) {
 
     return (
         <div className='changeBar'>
-            <Link to={"/profil/"+idP}><input type={'button'} /></Link>
+            {idP > 0 ? <Link to={"/profil/"+idP}><input type={'button'} /></Link> : null}
             <div>
                 <h1>No.{id}</h1>
                 <img src={items.image} alt="" />
             </div>
-            <Link to={"/profil/"+idS}><input type={'button'} /></Link>
+            {idS < 151 ? <Link to={"/profil/"+idS}><input type={'button'} /></Link> : null}
         </div>
     );
 }
